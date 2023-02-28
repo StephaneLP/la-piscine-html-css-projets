@@ -1,0 +1,32 @@
+#presentation {
+    background-color: $section-bg;
+    border-radius: $section-radius;
+    max-width: 1200px;
+    margin: 40px auto 80px;
+    box-shadow: $shadow;
+
+    .row {
+        overflow: hidden;
+        height: 540px;
+    }
+
+    #presentation-l {
+        text-align: left;
+        padding: 80px 0 40px 50px;
+        color: $section-color;
+
+        p {
+            margin: 40px 0 60px;
+            line-height: 2rem;
+        }
+    }
+
+    #presentation-r {
+        text-align: center;
+        padding-top: 200px;
+        
+        #photo-iphone {
+            width: 300px;
+        }
+    }
+}

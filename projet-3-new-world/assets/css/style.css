@@ -1,0 +1,268 @@
+/*************************************************/
+/* REGLES                                        */
+/*************************************************/
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+
+/*************************************************/
+/* BALISES                                       */
+/*************************************************/
+
+body {
+    font-family: "Roboto Regular",Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    height: 100%;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5rem
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+/*************************************************/
+/* COMPOSANTS                                    */
+/*************************************************/
+
+.global {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(241, 165, 65);
+    padding: 10px 20px;
+    display:inline-block;
+}
+
+/*************************************************/
+/* HEADER                                        */
+/*************************************************/
+
+header {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0px;
+}
+
+/* MENU */
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: -40px;
+}
+
+header nav ul li {
+    list-style-type: none;
+    padding: 0px 10px;
+}
+
+header nav ul li:not(:last-child) {
+    border-right: 2px solid rgb(0, 0, 0);
+}
+
+header nav ul li a {
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+}
+
+/*************************************************/
+/* MAIN : SECTION BANDEAU                        */
+/*************************************************/
+
+section#bandeau {
+    background-image: url(../img/new-world-amazon-jeu.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 55vh;
+    text-align: center;
+}
+
+section#bandeau img {
+    width: 13%;
+}
+
+/*************************************************/
+/* MAIN : SECTION INTRODUCTION                   */
+/*************************************************/
+
+section#introduction {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+section#introduction p{
+    padding: 0px 30px;
+}
+
+/*************************************************/
+/* MAIN : SECTION ACTUALITES                     */
+/*************************************************/
+
+section#actualites {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+section#actualites h2 {
+    margin: 30px 0px;
+}
+
+section#actualites div.fichesactualites {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+/* FICHE ACTUALITE DU JOUR */
+
+section#actualites div.fichesactualites div.actualitejour {
+    width:32%;
+    text-align: left;
+    background-color: rgb(43, 43, 43);
+    margin: 5px;
+}
+
+section#actualites div.fichesactualites div.actualitejour > h3{
+    margin: 0px;
+    padding-bottom:5px;
+    background-color: white;
+}
+
+section#actualites div.fichesactualites div.actualitejour img {
+    width: 100%;
+}
+
+section#actualites div.fichesactualites div.actualitejour p {
+    color: white;
+}
+
+section#actualites div.fichesactualites div.actualitejour div.infosactualitejour {
+    padding: 0px 20px 100px 20px;
+}
+
+section#actualites div.fichesactualites div.actualitejour div.infosactualitejour h3{
+    color: white;
+}
+
+/*************************************************/
+/* FOOTER                                        */
+/*************************************************/
+
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    margin-top: 50px;
+}
+
+footer img {
+    width: 80px;
+}
+
+footer nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: -40px;
+}
+
+footer nav ul li {
+    list-style-type: none;
+    padding: 0px 10px;
+}
+
+footer nav ul li:not(:last-child) {
+    border-right: 2px solid rgb(255, 255, 255);
+}
+
+footer nav ul li a {
+    font-weight: 400;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+}
+
+/*************************************************/
+/* RESPONSIVE DESIGN                             */
+/*************************************************/
+
+@media screen and (max-width: 769px){
+    .global {
+        max-width: 769px;
+    }
+    section#actualites div.fichesactualites div.actualitejour {
+        width:48%;
+    }
+    section#actualites div.fichesactualites {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: -40px;
+    }
+    header nav ul li:not(:last-child) {
+        border-right: 0px;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: -40px;
+    }
+    footer nav ul li:not(:last-child) {
+        border-right: 0px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .global {
+        max-width: 500px;
+    }
+    section#bandeau img {
+        width: 30%;
+    }
+    section#actualites div.fichesactualites div.actualitejour {
+        width:98%;
+    }
+   
+}

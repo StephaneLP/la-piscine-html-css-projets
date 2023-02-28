@@ -1,0 +1,25 @@
+header {
+    padding: 10px 0;
+    box-shadow: $shadow;
+
+    .navbar-brand {
+        img {
+            max-width: 150px;
+        }
+    }
+
+    .navbar-nav {
+        padding-left: 0;
+        
+        .nav-item {
+            padding: 0 15px;
+
+            .nav-link {
+                color: $color;
+                padding: 0;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+

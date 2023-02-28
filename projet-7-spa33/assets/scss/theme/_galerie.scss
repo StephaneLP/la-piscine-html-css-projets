@@ -1,0 +1,39 @@
+#galerie {
+    background-color: #eaf0ff;
+    padding-top: 30px;
+
+    #galerie-div {
+        max-width: 1200px; 
+        margin: 50px auto 80px;
+        text-align: center;
+
+        h2 {
+            margin-bottom: 50px;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 200px;
+                height: 2px;
+                margin: 0 auto;
+                background-color: red;
+            }
+        }
+
+        #galerie-img1 {
+            @include img-galerie("../img/C11-F-Rhodesian-Noir-Blanc-120520-Kila-6-274x363.jpg");
+        }
+
+        #galerie-img2 {
+            @include img-galerie("../img/C11-F-Rhodesian-Noir-120521-Seilba-7-274x363.jpg");
+        }
+
+        #galerie-img3 {
+            @include img-galerie("../img/C7-F-BA-Noir-Fauve-119916-Nouma-4-274x363.jpg");
+        }
+
+        #galerie-img4 {
+            @include img-galerie("../img/B21-M-x-braque-119192-Marquis-4-274x363.jpg");
+        }
+    }
+}

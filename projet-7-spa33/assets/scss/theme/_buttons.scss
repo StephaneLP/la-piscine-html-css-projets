@@ -1,0 +1,24 @@
+.btn {
+    display: inline-block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 30px 30px;
+    background-color: $btn-bg;
+    color: $btn-color;
+    transition: all 0.5s ease-out;
+    
+    &:hover {
+        background-color: $btn-color;
+        color: $btn-bg;
+    }
+}
+
+// .btn-services {
+//     text-decoration: none;
+//     color: $section-color;
+//     transition: all 0.5s ease-out;
+
+//     &:hover {
+//         color: $section-bg;
+//     }    
+// }

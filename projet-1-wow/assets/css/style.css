@@ -1,0 +1,160 @@
+/*************************************************/
+/* REGLES                                        */
+/*************************************************/
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+
+/*************************************************/
+/* BALISES                                       */
+/*************************************************/
+
+body {
+    font-family: "Roboto Regular",Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 20px 15px
+}
+
+/*************************************************/
+/* COMPOSANTS                                    */
+/*************************************************/
+
+.global {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0px 10px
+}
+
+.btnPerso {
+    text-decoration: none;
+    display:inline-block;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%,0%);
+    white-space: nowrap;
+}
+
+.coulOrc {
+    background-color: rgb(70, 110, 32);
+}
+
+.coulPandaren {
+    background-color: rgb(91, 233, 114);
+}
+
+.coulHumain {
+    background-color: rgb(233, 91, 221);
+}
+
+/*************************************************/
+/* HEADER                                        */
+/*************************************************/
+
+header {
+    background-color: rgb(139, 136, 93);
+    padding: 10px 0px;
+}
+
+/* MENU */
+
+header nav {
+    margin:auto;
+}
+
+header nav ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    margin-left:30px;
+}
+
+/*************************************************/
+/* MAIN                                          */
+/*************************************************/
+
+main {
+    padding-top:10px;
+}
+
+/* SECTION PERSONNAGES */
+
+main section.persos {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+main section.persos div.fichePerso {
+    width: 32%;
+    margin: 0px 0px 10px 0px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px rgb(95, 95, 95);
+    position: relative;
+}
+
+main section.persos div.fichePerso p {
+    padding: 0px 15px;
+    margin-bottom: 70px;
+}
+
+/* SECTION IMAGES */
+
+main section.persos div.fichePerso div.imgPerso {
+    height:210px;
+    background-size: cover;
+    background-position: center;
+}
+main section.persos div.fichePerso div.imgOrc{
+    background-image: url(../img/orc_hunter.jpg);    
+}
+main section.persos div.fichePerso div.imgPandaren{
+    background-image: url(../img/pandaren_moine.jpg);    
+}
+main section.persos div.fichePerso div.imgHumain{
+    background-image: url(../img/humain_paladin.jpg);    
+}
+
+/*************************************************/
+/* RESPONSIVE DESIGN                             */
+/*************************************************/
+
+@media screen and (max-width: 769px){
+    main section.persos div.fichePerso {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    main section.persos div.fichePerso {
+        width: 98%;
+    }
+}

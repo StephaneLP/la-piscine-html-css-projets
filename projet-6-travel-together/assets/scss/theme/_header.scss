@@ -1,0 +1,27 @@
+header {
+    padding: 10px 0;
+
+    .navbar-brand {
+        img {
+            max-width: 250px;
+        }
+    }
+
+    .nav-item {
+        padding: 0 20px;
+    }
+
+    .navbar-nav {
+        padding-left: 0;
+        
+        .nav-link {
+            padding: 0;
+            font-size: 1.4rem;
+
+            &:hover {
+                color: $section-bg;
+            }
+        }
+    }
+}
+

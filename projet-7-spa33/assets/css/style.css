@@ -1,0 +1,192 @@
+@font-face {
+  font-family: "Roboto Regular";
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+body {
+  font-family: "Roboto Regular", Arial, Helvetica, sans-serif;
+  color: #222355;
+}
+
+h1, h2 {
+  font-size: 2.2rem;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 30px 30px;
+  background-color: #22234f;
+  color: white;
+  transition: all 0.5s ease-out;
+}
+.btn:hover {
+  background-color: white;
+  color: #22234f;
+}
+
+header {
+  padding: 10px 0;
+  box-shadow: 0px 3px 3px rgb(232, 231, 231);
+}
+header .navbar-brand img {
+  max-width: 150px;
+}
+header .navbar-nav {
+  padding-left: 0;
+}
+header .navbar-nav .nav-item {
+  padding: 0 15px;
+}
+header .navbar-nav .nav-item .nav-link {
+  color: #222355;
+  padding: 0;
+  font-size: 1.4rem;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  padding: 300px 0 20px;
+}
+
+#presentation {
+  max-width: 1200px;
+  margin: 50px auto 80px;
+  text-align: center;
+}
+#presentation h1 {
+  margin-bottom: 50px;
+}
+#presentation h1::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: red;
+}
+#presentation #presentation-imgl {
+  background-image: url(../img/chiens-adoption-spa.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 300px;
+}
+#presentation #presentation-imgl a {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translate(-50%);
+}
+#presentation #presentation-imgr {
+  background-image: url(../img/chats-adoption-spa.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 300px;
+}
+#presentation #presentation-imgr a {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translate(-50%);
+}
+#presentation #presentation-2 {
+  margin: 100px 0 50px;
+}
+#presentation #presentation-2 img {
+  max-height: 200px;
+  display: block;
+  margin: 10px auto;
+}
+#presentation #presentation-2 a {
+  color: #222355;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+#galerie {
+  background-color: #eaf0ff;
+  padding-top: 30px;
+}
+#galerie #galerie-div {
+  max-width: 1200px;
+  margin: 50px auto 80px;
+  text-align: center;
+}
+#galerie #galerie-div h2 {
+  margin-bottom: 50px;
+}
+#galerie #galerie-div h2::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: red;
+}
+#galerie #galerie-div #galerie-img1 {
+  background-image: url("../img/C11-F-Rhodesian-Noir-Blanc-120520-Kila-6-274x363.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 300px;
+}
+#galerie #galerie-div #galerie-img1 a {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translate(-50%);
+}
+#galerie #galerie-div #galerie-img2 {
+  background-image: url("../img/C11-F-Rhodesian-Noir-120521-Seilba-7-274x363.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 300px;
+}
+#galerie #galerie-div #galerie-img2 a {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translate(-50%);
+}
+#galerie #galerie-div #galerie-img3 {
+  background-image: url("../img/C7-F-BA-Noir-Fauve-119916-Nouma-4-274x363.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 300px;
+}
+#galerie #galerie-div #galerie-img3 a {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translate(-50%);
+}
+#galerie #galerie-div #galerie-img4 {
+  background-image: url("../img/B21-M-x-braque-119192-Marquis-4-274x363.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 300px;
+}
+#galerie #galerie-div #galerie-img4 a {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translate(-50%);
+}
+
+/*# sourceMappingURL=style.css.map */

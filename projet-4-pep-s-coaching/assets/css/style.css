@@ -1,0 +1,734 @@
+/*************************************************/
+/* REGLES                                        */
+/*************************************************/
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+
+/*************************************************/
+/* BALISES                                       */
+/*************************************************/
+
+body {
+    font-family: "Roboto Regular",Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0 auto;
+}
+
+section {
+    margin: 50px auto;
+    padding: 0 10px;
+}
+
+h1 {
+    font-family: "Roboto Bold",Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    font-weight:900;
+    text-shadow: 0px 5px 5px rgb(150, 150, 150);
+}
+
+h2 {
+    font-family: "Roboto Bold",Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: "Roboto Bold",Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+cite {
+    font-size: 0.9rem;
+    display: block;
+    margin-top: 2px;
+}
+
+/*************************************************/
+/* COMPOSANTS                                    */
+/*************************************************/
+
+.container {
+    max-width: 1024px;
+} 
+
+.btn {
+    text-decoration: none;
+    font-weight: 600;
+    color: #ff4676;
+    background-color: white;
+    border: 1px solid  #ff4676;
+    padding: 8px 30px;
+    display:inline-block;
+    border-radius: 5px;
+    transition: all 0.5s ease-out;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #ff4676;
+}
+
+.img-separator {
+    display: block;
+    margin: 0 auto;
+}
+
+.separator {
+    height: 1px;
+    background-color: #84d6eb;
+}
+
+.sous-titre {
+    font-size: 0.9rem;
+    color: rgb(63, 63, 63);
+}
+
+.sous-paragraphe {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.ombre {
+    box-shadow: 5px 5px 5px #e5f0ee;
+}
+
+.ombre-img {
+    box-shadow: 5px 5px 5px #c6dad7;
+}
+
+/*************************************************/
+/* HEADER                                        */
+/*************************************************/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+}
+
+header img {
+    width: 50px;
+}
+
+/* MENU */
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+header nav ul li {
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+header nav ul li:not(:last-child) {
+    border-right: 2px solid black;
+}
+
+header nav ul li a {
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+}
+
+/* ANIMATIONS */
+
+header nav ul li a:hover {
+    color: #84d6eb;
+    transition: color 0.4s;
+}
+
+header nav ul li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    margin: 0 auto;
+    background-color: #84d6eb;
+    transition: all 0.4s ease-in;
+}
+
+header nav ul li:hover::after {
+    width: 100%;
+}
+
+/* INITIALISATION 1ER MENU */
+
+header nav ul li:first-child a {
+    color: #84d6eb;
+}
+
+/*************************************************/
+/* MAIN : SECTION BANDEAU                        */
+/*************************************************/
+
+#bandeau {
+    background-image: url(../img/photo-1556139943-4bdca53adf1e\ 1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 45vh;
+    margin: 0;
+}
+
+#bandeau h1 {
+    text-align: center;
+    width: 60%;
+    margin: 0 0 40px;
+}
+
+#bandeau a.btn {
+    font-size: 1.1rem;
+    color: white;
+    background-color: #ff4676;
+    border: 1px solid  #ff4676;
+    padding: 15px 30px;
+}
+
+#bandeau a.btn:hover {
+    color: #ff4676;
+    background-color: white;
+    border: 1px solid  #ff4676;
+    padding: 15px 30px;
+}
+
+/*************************************************/
+/* MAIN : SECTION APPROCHE                       */
+/*************************************************/
+
+#approche {
+    text-align: center;
+}
+
+#approche h2 {
+    margin-bottom: 5px;
+}
+
+#approche p.sous-titre {
+    margin: 5px 0 40px;
+}
+
+/* DIV FLEX */
+
+#approche > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#approche > div > div {
+    width: 48%;
+    text-align: left;
+}
+
+#approche > div > #notre-approche-img {
+    background-image: url(../img/visuel-entre-approche.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+#approche > div > div h3 {
+    margin:0;
+}
+
+#approche > div > div ul {
+    padding-left: 10px;
+    list-style-type: '- ';
+    margin-bottom: 20px;
+}
+
+#approche > div > div ul:last-child {
+    margin-bottom: 0;
+}
+
+/*************************************************/
+/* MAIN : SECTION METHODE                        */
+/*************************************************/
+
+#methode {
+    text-align: center;
+}
+
+#methode a.btn {
+    margin: 30px 0;
+}
+
+/* DIV FLEX */
+
+#methode > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#methode > div > div {
+    width: 40%;
+    padding: 20px 20px 40px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+/*************************************************/
+/* MAIN : SECTION ACCOMPAGNEMENT                 */
+/*************************************************/
+
+#accompagnements {
+    text-align: center;
+}
+
+#accompagnements h2, h3 {
+    margin: 5px 0 5px;
+}
+
+#accompagnements p.sous-titre {
+    margin: 5px 0px 40px;
+}
+
+/* DIV FLEX */
+
+#accompagnements > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+#accompagnements > div > div {
+    text-align: center;
+    position: relative;
+    width: 28%;
+    padding-bottom: 100px;
+    position: relative;
+    border-radius: 5px;
+}
+
+/* TITRE ET SOUSLIGNAGE */
+
+#accompagnements > div > div h3 {
+    margin: 0;
+    padding: 0 10px;
+    font-size: 1.5rem;
+    font-weight:600;
+}
+
+#accompagnements > div > div h3::after {
+    content: "";
+    display: block;
+    height: 1.2rem;
+    width: 100%;
+    position: absolute;
+    transform: translate(-10px,-80%);
+    z-index: -1;
+}
+
+#accompagnements > div > div:nth-child(1) h3::after{
+    background-color: #84d6eb;    
+}
+
+#accompagnements > div > div:nth-child(2) h3::after{
+    background-color: #ffe17a;    
+}
+
+#accompagnements > div > div:nth-child(3) h3::after{
+    background-color: #cd84eb;    
+}
+
+/* PARAGRAPHES ET BOUTON */
+
+#accompagnements > div > div p:nth-child(2) {
+    margin-top: 40px;
+}
+
+#accompagnements > div > div a.btn {
+    white-space: nowrap;
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+}
+
+/*************************************************/
+/* MAIN : SECTION TÉMOIGNAGES                    */
+/*************************************************/
+
+#temoignages {
+    text-align: center;
+}
+
+#temoignages > img {
+    margin-bottom: 10px;
+}
+
+#temoignages > h2 {
+    margin-bottom: 70px;
+}
+
+/* DIV FLEX */
+
+#temoignages > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#temoignages > div > div {
+    border: 1px solid #84d6eb;
+    width: 30%;
+    padding: 0 10px 20px; 
+    border-radius: 5px;
+}
+
+#temoignages > div > div > img {
+    margin-top: -55px;
+    border: 15px solid white;
+}
+
+/*************************************************/
+/* MAIN : SECTION BLOG                           */
+/*************************************************/
+
+#blog {
+    text-align: center;
+}
+
+#blog h2 {
+    margin: 30px 0 5px;
+}
+
+#blog .sous-titre {
+    margin: 5px 0px 50px;
+}
+
+/* DIV FLEX */
+
+#blog .article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+#blog .article .article-img {
+    min-width: 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+#blog .article #img-superman {
+    background-image: url(../img/Art\ 2-Blog\ 1.jpg);
+}
+
+#blog .article #img-equipe {
+    background-image: url(../img/Art1-Blog\ 1.jpg);
+}
+
+#blog .article .article-paragraphe {
+    text-align: left;
+    padding-left: 40px;
+}
+
+#blog .article h3 {
+    margin: 0 0 5px;
+}
+
+#blog .article .sous-titre {
+    margin: 5px 0 40px;
+}
+
+#blog .article .btn{
+    padding: 8px 60px;
+}
+
+/*************************************************/
+/* FOOTER                                        */
+/*************************************************/
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    background-color: #e2e2e2;
+    padding: 20px 0 10px;
+}
+
+/* DIV FLEX */
+
+footer > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:0 auto;
+}
+
+footer > div > div {
+    width: 40%;
+}
+
+footer > div > #footer-img {
+    border-right: 1px solid black;
+    text-align:right;
+    padding-right: 40px;
+}
+
+footer > div > #footer-img img{
+    width: 25%
+}
+
+footer > div > #footer-infos {
+    text-align:left;
+    padding-left: 40px;
+}
+
+footer > div > #footer-infos h2 {
+   margin: 0;
+   font-size: 1rem;
+}
+
+footer > div > #footer-infos p{
+    font-size: 0.9rem;
+}
+
+footer > div > #footer-infos p:not(:nth-child(2)){
+    margin: 0;
+}
+
+footer > div > #footer-infos p:last-child{
+    font-weight: 600;
+}
+
+/* MENU FOOTER */
+
+footer nav {
+    margin-top: 20px;
+}
+
+footer nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+footer nav ul li {
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+footer nav ul li:not(:last-child) {
+    border-right: 2px solid black;
+}
+
+footer a {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #c53c61;
+    white-space: nowrap;
+}
+
+footer a:hover {
+    color: #ff4676;
+}
+
+/*************************************************/
+/* RESPONSIVE DESIGN                             */
+/*************************************************/
+
+@media screen and (max-width: 1032px){
+    /* SECTION ACCOMPAGNEMENTS */
+
+    #accompagnements > div > div h3{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 810px){
+    /* COMPOSANTS */
+
+    .container {
+        max-width: 810px;
+    }
+
+    .ombre {
+        box-shadow: 0px 0px;
+    }
+    
+    .ombre-img {
+        box-shadow: 0px 0px;
+    }
+    
+    /* HEADER */
+
+    header nav ul li:hover::after {
+        width: 0;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li:not(:last-child) {
+        border-right: 0;
+    }
+
+    /* SECTION BANDEAU */
+
+    #bandeau {
+        height: 40vh;
+    }
+
+    #bandeau h1 {
+        width: 90vw;
+        font-size: 2.5rem;
+    }
+
+    /* SECTION APPROCHE */
+
+    #approche > div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #approche > div > div {
+        width: 95vw;
+    }
+    
+    #approche > div #notre-approche-img {
+        height: 40vh;
+    }
+    
+    #approche > div div:nth-child(2){
+        margin-top: 20px;
+    }
+
+    /* SECTION SECTION METHODE */
+
+    #methode > div {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #methode > div > div {
+        width: 90vw;
+        padding: 20px 20px 20px;
+        margin-top: 0;
+    }
+
+    #methode > div > div:last-child {
+        padding-bottom: 0;
+    }
+
+    /* SECTION ACCOMPAGNEMENTS */
+
+    #accompagnements > div {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #accompagnements > div > div {
+        width: 40vw;
+        margin-bottom: 40px;
+    } 
+    
+    #accompagnements > div > div:last-child {
+        margin-bottom: 0;
+    }
+
+    /* SECTION TÉMOIGNAGES */
+
+    #temoignages > div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #temoignages > div > div {
+        width: 80%;
+        margin-bottom: 60px;
+    }
+
+    #temoignages > div > div:last-child {
+        margin-bottom: 0;
+    }
+
+    /* SECTION BLOG */
+
+    #blog .article {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #blog .article .article-img {
+        height: 30vh;
+        margin: 0 30px;
+    }
+
+    #blog .article .article-paragraphe {
+        text-align: center;
+        padding: 20px 20px 0px;
+    }  
+
+    /* FOOTER */
+
+    footer > div {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    footer > div > div {
+        width: 90%;
+    }
+
+    footer > div > #footer-img {
+        border-right: 0 solid black;
+        text-align: center;
+        padding-right: 0;
+    }
+    
+    footer > div > #footer-img img{
+        width: 15%
+    }
+
+    footer > div > #footer-infos {
+        text-align: center;
+        padding-left: 0;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ffffff;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
+}
