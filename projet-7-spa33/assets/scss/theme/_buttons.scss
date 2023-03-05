@@ -8,7 +8,7 @@
     transition: all 0.5s ease-out;
     
     &:hover {
-        background-color: $btn-color;
+        background-color: $btn-bg-hover;
         color: $btn-bg;
     }
 }

@@ -1,0 +1,24 @@
+{
+  "name": "la-piscine-html-css-projets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass6": "sass -w projet-6-travel-together/assets/scss:projet-6-travel-together/assets/css",
+    "sass7": "sass -w projet-7-spa33/assets/scss:projet-7-spa33/assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephaneLP/la-piscine-html-css-projets.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StephaneLP/la-piscine-html-css-projets/issues"
+  },
+  "homepage": "https://github.com/StephaneLP/la-piscine-html-css-projets#readme",
+  "dependencies": {
+    "sass": "^1.58.3"
+  }
+}

@@ -1,8 +1,9 @@
 #galerie {
-    background-color: #eaf0ff;
+    position: relative;
     padding-top: 30px;
+    height: 300px;
 
-    #galerie-div {
+    #galerie-div1 {
         max-width: 1200px; 
         margin: 50px auto 80px;
         text-align: center;
@@ -35,5 +36,15 @@
         #galerie-img4 {
             @include img-galerie("../img/B21-M-x-braque-119192-Marquis-4-274x363.jpg");
         }
+
+        .btn {
+            width: 80%;
+        }
     }
+
 }
+
+    #galerie-div2 {
+        background-color: #eaf0ff;
+        height: 300px;
+    }
