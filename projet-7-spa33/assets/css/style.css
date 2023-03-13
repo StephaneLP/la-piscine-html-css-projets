@@ -50,12 +50,11 @@ header .navbar-nav .nav-item .nav-link {
 
 footer {
   color: white;
-  background-color: black;
+  background-color: white;
   padding: 300px 0 20px;
 }
 
 #presentation {
-  max-width: 1200px;
   margin: 50px auto 80px;
   text-align: center;
 }
@@ -115,17 +114,14 @@ footer {
 #galerie {
   position: relative;
   padding-top: 30px;
-  height: 300px;
-}
-#galerie #galerie-div1 {
-  max-width: 1200px;
-  margin: 50px auto 80px;
+  height: 400px;
+  background-color: #eaf0ff;
   text-align: center;
 }
-#galerie #galerie-div1 h2 {
+#galerie h2 {
   margin-bottom: 50px;
 }
-#galerie #galerie-div1 h2::after {
+#galerie h2::after {
   content: "";
   display: block;
   width: 200px;
@@ -133,7 +129,7 @@ footer {
   margin: 0 auto;
   background-color: red;
 }
-#galerie #galerie-div1 #galerie-img1 {
+#galerie #galerie-img1 {
   background-image: url("../img/C11-F-Rhodesian-Noir-Blanc-120520-Kila-6-274x363.jpg");
   background-size: cover;
   background-position: center;
@@ -141,13 +137,13 @@ footer {
   position: relative;
   height: 300px;
 }
-#galerie #galerie-div1 #galerie-img1 a {
+#galerie #galerie-img1 a {
   position: absolute;
   left: 50%;
   bottom: 10px;
   transform: translate(-50%);
 }
-#galerie #galerie-div1 #galerie-img2 {
+#galerie #galerie-img2 {
   background-image: url("../img/C11-F-Rhodesian-Noir-120521-Seilba-7-274x363.jpg");
   background-size: cover;
   background-position: center;
@@ -155,13 +151,13 @@ footer {
   position: relative;
   height: 300px;
 }
-#galerie #galerie-div1 #galerie-img2 a {
+#galerie #galerie-img2 a {
   position: absolute;
   left: 50%;
   bottom: 10px;
   transform: translate(-50%);
 }
-#galerie #galerie-div1 #galerie-img3 {
+#galerie #galerie-img3 {
   background-image: url("../img/C7-F-BA-Noir-Fauve-119916-Nouma-4-274x363.jpg");
   background-size: cover;
   background-position: center;
@@ -169,13 +165,13 @@ footer {
   position: relative;
   height: 300px;
 }
-#galerie #galerie-div1 #galerie-img3 a {
+#galerie #galerie-img3 a {
   position: absolute;
   left: 50%;
   bottom: 10px;
   transform: translate(-50%);
 }
-#galerie #galerie-div1 #galerie-img4 {
+#galerie #galerie-img4 {
   background-image: url("../img/B21-M-x-braque-119192-Marquis-4-274x363.jpg");
   background-size: cover;
   background-position: center;
@@ -183,18 +179,17 @@ footer {
   position: relative;
   height: 300px;
 }
-#galerie #galerie-div1 #galerie-img4 a {
+#galerie #galerie-img4 a {
   position: absolute;
   left: 50%;
   bottom: 10px;
   transform: translate(-50%);
 }
-#galerie #galerie-div1 .btn {
+#galerie .btn {
   width: 80%;
 }
 
 #galerie-div2 {
-  background-color: #eaf0ff;
   height: 300px;
 }
 
